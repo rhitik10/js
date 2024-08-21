@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JQUERY IMAGE ZOOM</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="aos.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="ez-plus.js"></script>
+	<script src="wow.min.js"></script>
+	<script src="aos.js"></script>
+	<!-- assignment => install magnific popup library for multiple images -->
+</head>
+<body>
+
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-lg-4">
+				<img id="img_01" src="image1.jpg" data-zoom-image="image1.jpg"/>
+
+				<div id="gal1">
+					 
+				    
+				    <a href="#" data-image="image1.jpg" data-zoom-image="image1.jpg">
+				        <img id="img_01" src="image1.jpg"/>
+				    </a>
+				    <a href="#" data-image="image2.jpg" data-zoom-image="image2.jpg">
+				        <img id="" src="image2.jpg"/>
+				    </a>
+				    <a href="#" data-image="image3.jpg" data-zoom-image="image3.jpg">
+				        <img id="" src="image3.jpg"/>
+				    </a>
+				    <a href="#" data-image="image.jpg" data-zoom-image="image.jpg">
+				        <img id="" src="image.jpg"/>
+				     </a>
+				   
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<h1 class="h3">U Shaped Comfortable Pregnancy Pillow</h1>
+				<p class="small">24 Ratings</p>
+				<p>Brand:No Brand</p>
+				<p>Rs. 1,959</p>
+				<p class="small text-muted"><del>Rs. 3,500</del> 44%</p>
+				Promotions
+				Min. spend Rs. 399
+			</div>
+			<div class="col-lg-4">
+				<h3>Delivery Options 	</h3>
+				<p>Bagmati, Kathmandu Metro 22 - Newroad Area, Newroad	CHANGE</p>
+				<p>Standard Delivery</p>
+				<p>Guaranteed by 18 Aug</p>
+				<p>Rs. 125</p>
+				<p>Cash on Delivery Available	</p>
+				<p>Return & Warranty 	</p>
+				<p>14 Days Easy Return</p>
+				<p>Warranty not available</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container text-center my-5">
+		<h2 class="display-1 my-5">ANIMATE ON SCROLL JS/CSS</h2>
+	</div>
+
+	<div class="container">		
+		<div class="row">
+			<div class="col-lg-6">
+				<h2>WOW JS</h2>
+				<!-- https://wowjs.uk/docs.html -->
+				<!-- https://animate.style/ -->
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-lg-6">
+				<h2>ANIMATE JS</h2>
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container my-5 wow slideInLeft" data-wow-duration="2s">
+		<h1 class="display-1">WOW JS ANIMATED CONTENT</h1>
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="container my-5" data-aos="zoom-in" data-aos-duration="1500">
+		<h1>AOS ANIMATE ON SCROLL</h1>
+		<!-- https://michalsnik.github.io/aos/ -->
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+<script>
+	$('#img_01').ezPlus({
+        zoomWindowFadeIn: 500,
+        zoomLensFadeIn: 500,
+        gallery: 'gal1',
+        imageCrossfade: true,
+        zoomWindowWidth: 411,
+        zoomWindowHeight: 274,
+        zoomWindowOffsetX: 10,
+        scrollZoom: true,
+        cursor: 'pointer'
+    });
+</script>
+<style>
+	#gal1{
+		display: flex;
+	}
+	#gal1 img{
+		width: 100%;
+	}
+</style>
+<script>
+  new WOW().init();
+  AOS.init();
+  </script>
+</body>
+</html>

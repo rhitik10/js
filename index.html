@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jquery Image Slider</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="ez-plus.js"></script>
+
+<body>
+
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-lg-4">
+				<img id="img_01" src="image1.jpg" data-zoom-image="image1.jpg"/>
+
+				<div id="gal1">
+					 
+				    
+				    <a href="#" data-image="image1.jpg" data-zoom-image="image1.jpg">
+				        <img id="img_01" src="image1.jpg"/>
+				    </a>
+				    <a href="#" data-image="image2.jpg" data-zoom-image="image2.jpg">
+				        <img id="" src="image2.jpg"/>
+				    </a>
+				    <a href="#" data-image="image3.jpg" data-zoom-image="image3.jpg">
+				        <img id="" src="image3.jpg"/>
+				    </a>
+				    <a href="#" data-image="image.jpg" data-zoom-image="image.jpg">
+				        <img id="" src="image.jpg"/>
+				     </a>
+				   
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<h1 class="h3">U Shaped Comfortable Pregnancy Pillow</h1>
+				<p class="small">24 Ratings</p>
+				<p>Brand:No Brand</p>
+				<p>Rs. 1,959</p>
+				<p class="small text-muted"><del>Rs. 3,500</del> 44%</p>
+				Promotions
+				Min. spend Rs. 399
+			</div>
+			<div class="col-lg-4">
+				<h3>Delivery Options 	</h3>
+				<p>Bagmati, Kathmandu Metro 22 - Newroad Area, Newroad	CHANGE</p>
+				<p>Standard Delivery</p>
+				<p>Guaranteed by 18 Aug</p>
+				<p>Rs. 125</p>
+				<p>Cash on Delivery Available	</p>
+				<p>Return & Warranty 	</p>
+				<p>14 Days Easy Return</p>
+				<p>Warranty not available</p>
+			</div>
+		</div>
+	</div>
+<script>
+	
+	$('#img_01').ezPlus({
+        zoomWindowFadeIn: 500,
+        zoomLensFadeIn: 500,
+        gallery: 'gal1',
+        imageCrossfade: true,
+        zoomWindowWidth: 411,
+        zoomWindowHeight: 274,
+        zoomWindowOffsetX: 10,
+        scrollZoom: true,
+        cursor: 'pointer'
+    });
+
+</script>
+<style>
+	#gal1{
+		display: flex;
+	}
+	#gal1 img{
+		width: 100%;
+	}
+</style>
+
+</body>
+</html>
